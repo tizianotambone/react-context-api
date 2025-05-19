@@ -1,10 +1,14 @@
 import { useContext } from 'react';
+import PostContext from '../context/postContext';
 import PostCard from './PostCard';
 
 function PostsList() {
+
+    const context = useContext(PostContext);
+
     return (
         <div className='row'>
-            {listPosts.map(post => (
+            {context.listPost.map((post) => (
                 <PostCard key={post.id} post={post} />
             ))}
         </div>
