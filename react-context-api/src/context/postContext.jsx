@@ -1,5 +1,5 @@
 import { createContext } from "react"
 
-const postContext = createContext();
+const PostContext = createContext();
 
-export default postContext
+export default PostContext
